@@ -5,13 +5,13 @@ Summary:	CGI::Out perl module
 Summary(pl):	Modu³ perla CGI::Out
 Name:		perl-CGI-Out
 Version:	101.121401
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-libnet
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 Provides:	perl(CGI::BigDeath)
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
