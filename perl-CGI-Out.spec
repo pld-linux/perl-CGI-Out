@@ -9,9 +9,9 @@ Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-libnet
+BuildRequires:	rpm-perlprov >= 3.0.3-16
 Provides:	perl(CGI::BigDeath)
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -23,7 +23,11 @@ an error before you are finished, then it will display a nice error
 message (in HTML), log the error, and send email about the problem.
 
 %description -l pl
-CGI::Out zawiera procedurê pomocn± przy tworzeniu programów CGI.
+CGI::Out jest procedur± pomocn± przy tworzeniu programów CGI. Buforuje
+standardowe wyj¶cie do czasu ukoñczenia tworzenia danych wyj¶ciowych.
+Je¶li wykonywanie skryptu zakoñczy siê b³êdem, procedura wy¶wietli
+³adny komunikat b³êdu (w HTML-u), zapisze komunikat do loga i
+powiadomi o tym e-mailem.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -37,13 +41,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README
 %{perl_sitelib}/CGI/*.pm
 %{_mandir}/man3/*
