@@ -1,12 +1,11 @@
-%define	pdir	CGI
-%define	pnam	Out
 %include	/usr/lib/rpm/macros.perl
+%define		pdir	CGI
+%define		pnam	Out
 Summary:	CGI-Out perl module
 Summary(pl):	Modu³ perla CGI-Out
 Name:		perl-CGI-Out
 Version:	100.010301
 Release:	5
-
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -27,7 +26,7 @@ message (in HTML), log the error, and send email about the problem.
 CGI-Out zawiera procedurê pomocn± przy tworzeniu programów CGI.
 
 %prep
-%setup -q -n CGI-Out-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
