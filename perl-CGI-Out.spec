@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	CGI
-%define		pnam	Out
+%define	pdir	CGI
+%define	pnam	Out
 Summary:	CGI::Out perl module
 Summary(pl):	Modu³ perla CGI::Out
 Name:		perl-CGI-Out
