@@ -1,16 +1,19 @@
-%define		perl_sitelib	%(eval "`perl -V:installsitelib`"; echo $installsitelib)
+%include	/usr/lib/rpm/macros.perl
 Summary:	CGI-Out perl module
 Summary(pl):	Modu³ perla CGI-Out
 Name:		perl-CGI-Out
-Version:	96.081401
-Release:	3
+Version:	99.090801
+Release:	1
 Copyright:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/CGI/CGI-Out-%{version}.tar.gz
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov
+BuildRequires:	perl >= 5.005_03-12
+BuildRequires:	perl-libnet
 %requires_eq	perl
 Requires:	%{perl_sitearch}
+Provides:	perl(CGI::BigDeath)
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
