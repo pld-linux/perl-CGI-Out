@@ -30,7 +30,7 @@ CGI-Out zawiera procedurê pomocn± przy tworzeniu programów CGI.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
