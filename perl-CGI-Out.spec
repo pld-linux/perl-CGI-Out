@@ -2,8 +2,8 @@
 Summary:	CGI-Out perl module
 Summary(pl):	Modu³ perla CGI-Out
 Name:		perl-CGI-Out
-Version:	99.090801
-Release:	2
+Version:	100.010301
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
