@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	CGI
 %define		pnam	Out
-Summary:	CGI-Out perl module
-Summary(pl):	Modu³ perla CGI-Out
+Summary:	CGI::Out perl module
+Summary(pl):	Modu³ perla CGI::Out
 Name:		perl-CGI-Out
 Version:	100.010301
 Release:	5
@@ -17,13 +17,13 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-CGI-Out is a helper routine for building CGI programs. It buffers
+CGI::Out is a helper routine for building CGI programs. It buffers
 stdout until you're completed building your output. If you should get
 an error before you are finished, then it will display a nice error
 message (in HTML), log the error, and send email about the problem.
 
 %description -l pl
-CGI-Out zawiera procedurê pomocn± przy tworzeniu programów CGI.
+CGI::Out zawiera procedurê pomocn± przy tworzeniu programów CGI.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
