@@ -14,7 +14,7 @@ BuildRequires:	perl-libnet
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 Provides:	perl(CGI::BigDeath)
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 CGI-Out is a helper routine for building CGI programs. It buffers stdout 
