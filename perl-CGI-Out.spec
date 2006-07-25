@@ -4,12 +4,13 @@
 Summary:	CGI::Out perl module
 Summary(pl):	Modu³ perla CGI::Out
 Name:		perl-CGI-Out
-Version:	101.121401
-Release:	3
+Version:	2006.0215
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	ab2826791552b589b610bebf01b98744
+# Source0-md5:	b9aab3af9d578dd6df9db93e2337be94
+URL:		http://search.cpan.org/dist/CGI-Out/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-libnet
 BuildRequires:	rpm-perlprov >= 4.1-13
