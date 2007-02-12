@@ -2,7 +2,7 @@
 %define		pdir	CGI
 %define		pnam	Out
 Summary:	CGI::Out perl module
-Summary(pl):	Modu³ perla CGI::Out
+Summary(pl.UTF-8):   ModuÅ‚ perla CGI::Out
 Name:		perl-CGI-Out
 Version:	2006.0215
 Release:	1
@@ -24,11 +24,11 @@ stdout until you're completed building your output. If you should get
 an error before you are finished, then it will display a nice error
 message (in HTML), log the error, and send email about the problem.
 
-%description -l pl
-CGI::Out jest procedur± pomocn± przy tworzeniu programów CGI. Buforuje
-standardowe wyj¶cie do czasu ukoñczenia tworzenia danych wyj¶ciowych.
-Je¶li wykonywanie skryptu zakoñczy siê b³êdem, procedura wy¶wietli
-³adny komunikat b³êdu (w HTML-u), zapisze komunikat do loga i
+%description -l pl.UTF-8
+CGI::Out jest procedurÄ… pomocnÄ… przy tworzeniu programÃ³w CGI. Buforuje
+standardowe wyjÅ›cie do czasu ukoÅ„czenia tworzenia danych wyjÅ›ciowych.
+JeÅ›li wykonywanie skryptu zakoÅ„czy siÄ™ bÅ‚Ä™dem, procedura wyÅ›wietli
+Å‚adny komunikat bÅ‚Ä™du (w HTML-u), zapisze komunikat do loga i
 powiadomi o tym e-mailem.
 
 %prep
