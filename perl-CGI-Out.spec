@@ -2,7 +2,7 @@
 %define		pdir	CGI
 %define		pnam	Out
 Summary:	CGI::Out perl module
-Summary(pl.UTF-8):   Moduł perla CGI::Out
+Summary(pl.UTF-8):	Moduł perla CGI::Out
 Name:		perl-CGI-Out
 Version:	2006.0215
 Release:	1
