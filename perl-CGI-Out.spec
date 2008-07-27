@@ -5,7 +5,7 @@ Summary:	CGI::Out perl module
 Summary(pl.UTF-8):	Moduł perla CGI::Out
 Name:		perl-CGI-Out
 Version:	2006.0215
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
